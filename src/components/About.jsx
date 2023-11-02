@@ -1,6 +1,18 @@
 import img from "../assets/img-portfolio.png";
+import pdfFile from "../assets/IgnacioVasconcellosFront-CV.pdf";
 
 const About = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = pdfFile;
+    link.download = "CV-IgnacioVasconcellos";
+    link.style.display = "none";
+
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+  };
   return (
     <div
       id="About"
@@ -30,7 +42,10 @@ const About = () => {
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
             <div className="flex space-x-2">
-              <button className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden">
+              <button
+                className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 hover:bg-fuchsia-800 border-fuchsia-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden"
+                onClick={handleDownload}
+              >
                 Curriculum
               </button>
             </div>
