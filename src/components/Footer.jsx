@@ -1,8 +1,13 @@
+import Aos from "aos";
+import { useEffect } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <footer className="bg-slate-800 text-white lg:px-48 px-4 py-20">
+    <footer data-aos="fade-down" className="bg-slate-800 text-white lg:px-48 px-4 py-20">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
         <div className="mb-4 md:mb-0">
           <span className="text-3xl font-semibold text-fuchsia-800 py-2">
