@@ -5,7 +5,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
-import Nav from "./components/nav";
+import Nav from "./components/Nav";
 import { MutatingDots } from "react-loader-spinner";
 
 const App = () => {
