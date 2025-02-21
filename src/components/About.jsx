@@ -34,9 +34,9 @@ const About = () => {
           About me
         </h1>
         <p data-aos="fade-left">
-          Empecé con la programación hace 2 años, pasando por diferentes cursos.
+          Empecé con la programación en el año 2020, pasando por diferentes cursos.
           Actualmente sigo capacitándome, recientemente termine una Diplomatura
-          Full-Stack y estoy finalizando mi primer año de la Tecnicatura
+          Full-Stack y estoy finalizando la Tecnicatura
           Superior en Programación en TECLAB.
         </p>
         <div className="flex mt-8 gap-2">
